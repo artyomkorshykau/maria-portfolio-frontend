@@ -1,14 +1,21 @@
+@import "apx-variables";
+@import "colors";
+
 html {
+
   box-sizing: border-box;
   font-size: 100%;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
 }
 
 *,
 *::before,
 *::after {
+
   box-sizing: border-box;
+
 }
 
 input,
@@ -17,24 +24,34 @@ select,
 textarea,
 optgroup,
 option {
+
   font-family: inherit;
   font-size: inherit;
   font-weight: inherit;
   font-style: inherit;
   color: inherit;
+
 }
 
 a:visited {
+
   color: inherit;
+
 }
 
 body {
+
   margin: 0;
   padding: 0;
   background-color: var(--color-light-100);
 
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100dvh;
+  overflow: -moz-scrollbars-none;
+  -ms-overflow-style: none;
+
+}
+
+body::-webkit-scrollbar {
+
+  display: none;
+
 }

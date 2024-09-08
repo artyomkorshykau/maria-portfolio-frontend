@@ -4,7 +4,7 @@ import { ReactNode } from 'react'
 
 import { Manrope } from 'next/font/google'
 
-import '@/styles/index.scss'
+import '@/styles/global.scss'
 
 
 const manrope = Manrope( { subsets: [ 'latin' ] } )
@@ -12,7 +12,7 @@ const manrope = Manrope( { subsets: [ 'latin' ] } )
 export const metadata: Metadata = {
   
   description: 'Communication and graphic design',
-  title: 'Designer Maria'
+  title: 'Maria Designer'
   
 }
 
@@ -26,7 +26,11 @@ export default function RootLayout( { children }: Readonly<{
     
     <html lang={ 'en' }>
     
-    <body className={ manrope.className }>{ children }</body>
+    <body className={ manrope.className }>
+    
+    { children }
+    
+    </body>
     
     </html>
   
