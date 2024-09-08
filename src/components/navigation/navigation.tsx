@@ -1,6 +1,6 @@
 import style from './navigation.module.scss'
-import Name from '@/shared/name/name'
 import BurgerMenu from '@/shared/burger.menu/ui/burger.menu'
+import Logo from '@/shared/logo/logo'
 
 const Navigation = () => {
   
@@ -8,7 +8,7 @@ const Navigation = () => {
     
     <div className = { `${ style.navigation }` }>
       
-      <Name/>
+      <Logo/>
       <BurgerMenu/>
     
     </div>

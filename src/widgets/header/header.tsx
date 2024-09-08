@@ -1,5 +1,6 @@
 import style from './header.module.scss'
 import Navigation from '@/components/navigation/navigation'
+import Billboard from '@/components/billboard/billboard'
 
 
 const Header = () => {
@@ -9,6 +10,7 @@ const Header = () => {
     <section className = { `${ style.header }` }>
     
       <Navigation/>
+      <Billboard/>
       
     </section>
     

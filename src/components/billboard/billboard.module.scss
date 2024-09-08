@@ -1,0 +1,65 @@
+@import "@/styles/_apx-variables.scss";
+
+.billboard {
+
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: max-content;
+  margin: $apx-80 0 0 $apx-130;
+
+  &__greetings {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: var(--color-light-100);
+    font-weight: 400;
+    font-size: $apx-18;
+    text-transform: uppercase;
+    line-height: $apx-23;
+    letter-spacing: 0.24em;
+
+    width: $apx-181;
+    height: $apx-29;
+    background-color: rgba(236, 236, 236, 0.17);
+    margin-bottom: $apx-45;
+
+  }
+
+  &__name {
+
+    color: var(--color-light-100);
+    font-weight: 800;
+    font-size: $apx-90;
+    line-height: $apx-120;
+    letter-spacing: -0.04em;
+
+  }
+
+  &__biz {
+
+    color: var(--color-light-100);
+    font-weight: 800;
+    font-size: $apx-90;
+    line-height: $apx-120;
+    letter-spacing: -0.033em;
+
+    margin-bottom: $apx-65;
+
+  }
+
+  &__about {
+
+    color: var(--color-light-100);
+    font-weight: 400;
+    font-size: $apx-24;
+    line-height: $apx-30;
+    letter-spacing: 0.07em;
+
+    margin-bottom: $apx-68;
+
+  }
+
+}
