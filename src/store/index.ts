@@ -10,7 +10,7 @@ const states: State = {
   
 }
 
-const actions = {
+const actions: Actions = {
   
   appActions: appActions
   
