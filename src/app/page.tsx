@@ -1,5 +1,17 @@
+import Header from '@/widgets/header/header'
+import style from './page.module.scss'
+
+
 export default function Main() {
   
-  return <div> Portfolio   </div>
+  return (
+    
+    <main className = { `${ style.page }` }>
+      
+      <Header/>
+    
+    </main>
+  
+  )
   
 }
