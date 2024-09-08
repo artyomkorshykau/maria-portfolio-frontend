@@ -1,0 +1,26 @@
+@import "@/styles/_apx-variables.scss";
+
+.name {
+
+  position: relative;
+  display: flex;
+  align-items: end;
+
+  color: var(--color-light-100);
+  font-weight: 600;
+  font-size: $apx-36;
+
+  &__dot {
+
+    position: absolute;
+    right: -$apx-10;
+    bottom: $apx-10;
+
+    width: $apx-6;
+    height: $apx-6;
+    border-radius: 50%;
+    background-color: #FFCF45;
+
+  }
+
+}
