@@ -1,0 +1,33 @@
+@import "@/styles/_apx-variables.scss";
+
+.socials {
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: $apx-90;
+
+  &__social {
+
+    cursor: pointer;
+
+    &__icon {
+
+      width: $apx-30;
+      height: $apx-30;
+      fill: #8C8C8C;
+      stroke: #8C8C8C;
+      transition: all .2s;
+
+      &:hover {
+
+        fill: #ffffff;
+        stroke: #ffffff;
+
+      }
+
+    }
+
+  }
+
+}

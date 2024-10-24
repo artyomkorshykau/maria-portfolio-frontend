@@ -1,6 +1,7 @@
 import Header from '@/widgets/header/header'
 import About from '@/widgets/about/abaut'
 import style from './page.module.scss'
+import Footer from '@/widgets/footer/footer'
 
 
 export default function Main() {
@@ -11,6 +12,7 @@ export default function Main() {
       
       <Header/>
       <About/>
+      <Footer/>
     
     </main>
   

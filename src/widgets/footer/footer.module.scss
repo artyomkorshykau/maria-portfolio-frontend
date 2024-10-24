@@ -1,0 +1,14 @@
+@import "@/styles/_apx-variables.scss";
+
+.footerSection {
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  width: 100%;
+  height: $apx-150;
+  background-color: #1A1A1A;
+  margin-top: $apx-100;
+
+}
