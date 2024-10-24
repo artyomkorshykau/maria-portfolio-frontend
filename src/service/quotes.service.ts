@@ -5,17 +5,17 @@ export const getDailyQuote = async(): Promise<QuotesResponse> => {
   
   try {
     
-    const apiKey = process.env.NEXT_PUBLIC_API_KEY
+    const apiKey = process.env.API_KEY
     
     if( !apiKey ) {
       throw new Error( 'API ключ не определен' )
     }
     
-    const response = await fetch( `${ process.env.NEXT_PUBLIC_API_ROOT }/quotes`, {
+    const response = await fetch( `${ process.env.API_ROOT }/quotes`, {
       
       headers: {
         
-        'X-Api-Key': process.env.NEXT_PUBLIC_API_KEY || ''
+        'X-Api-Key': process.env.API_KEY || ''
         
       }
       
