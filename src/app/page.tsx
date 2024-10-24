@@ -6,7 +6,7 @@ export default function Main() {
   
   return (
     
-    <main className = { `${ style.page }` }>
+    <main>
       
       <Header/>
     
