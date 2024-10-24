@@ -34,7 +34,12 @@ const Billboard = () => {
       
       </div>
       
-      <Button variant={ 'primary' }/>
+      <Button
+        
+        variant={ 'primary' }
+        title={ 'Get in touch' }
+      
+      />
     
     </div>
   

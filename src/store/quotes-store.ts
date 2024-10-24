@@ -5,9 +5,8 @@ import { getDailyQuote } from '@/service/quotes.service'
 
 export const useQuotesStore = create<QuotesStore>( ( set ) => ( {
   
-  quote: 'Имейте храбрость следовать своему сердцу и интуиции. Они каким-то' +
-    ' образом уже знают то, кем вы хотите стать на самом деле.',
-  author: 'Стив Джобс',
+  quote: null,
+  author: null,
   
   setDailyQuote: async() => {
     

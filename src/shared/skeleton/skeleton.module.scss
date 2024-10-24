@@ -1,0 +1,28 @@
+@import "@/styles/_apx-variables.scss";
+
+.skeletonWrapper {
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: $apx-17;
+
+  &__skeleton {
+
+    border-radius: $apx-10;
+    animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+    height: $apx-17;
+    background-color: rgb(255 255 255 / 0.2)
+
+  }
+
+
+}
+
+@keyframes pulse {
+
+  50% {
+    opacity: .5;
+  }
+
+}

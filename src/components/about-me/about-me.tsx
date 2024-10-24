@@ -10,7 +10,7 @@ const AboutMe = () => {
       
       <div className={ `${ style.aboutMe__title }` }>
         
-        ABOUT
+        About
       
       </div>
       
@@ -25,7 +25,12 @@ const AboutMe = () => {
       
       </div>
       
-      <Button variant={ 'secondary' }/>
+      <Button
+        
+        variant={ 'secondary' }
+        title={ 'About me' }
+      
+      />
     
     </div>
   

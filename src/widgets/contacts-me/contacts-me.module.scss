@@ -1,9 +1,10 @@
 @import "@/styles/_apx-variables.scss";
 
-.aboutMe {
+.contactsSection {
 
   display: flex;
   flex-direction: column;
+  align-items: center;
 
   &__title {
 
@@ -16,8 +17,6 @@
 
   &__description {
 
-    max-width: $apx-600;
-
     font-size: $apx-17;
     color: #555555;
     line-height: $apx-40;
@@ -29,6 +28,13 @@
 
   &__button {
 
+
+    width: $apx-300;
+    height: $apx-80;
+    border-radius: $apx-12;
+    letter-spacing: $apx-3;
+    font-size: $apx-19;
+    color: #555555;
 
   }
 

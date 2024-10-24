@@ -1,27 +1,34 @@
-import React from 'react'
+import React, { ButtonHTMLAttributes } from 'react'
 import styles from './button.module.scss'
 
 
 type Props = {
   
   variant: 'primary' | 'secondary'
+  title: string
+  className: string
   
-}
+} & ButtonHTMLAttributes<HTMLButtonElement>
 
-const Button = ( { variant }: Props ) => {
+const Button = ( { variant, title, className, ...props }: Props ) => {
   
   if( variant === 'primary' ) {
     
     return (
       
-      <button className={ `${ styles.primary }` }>
+      <button
+        
+        className={ `${ styles.primary } ${ className }` }
+        { ...props }
+      
+      >
         
         <span></span>
         <span></span>
         <span></span>
         <span></span>
         
-        About me
+        { title }
       
       </button>
     
@@ -31,9 +38,14 @@ const Button = ( { variant }: Props ) => {
     
     return (
       
-      <button className={ `${ styles.secondary }` }>
+      <button
         
-        About me
+        className={ `${ styles.secondary } ${ className }` }
+        { ...props }
+      
+      >
+        
+        { title }
       
       </button>
     

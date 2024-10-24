@@ -3,8 +3,7 @@
 import style from './quotes.module.scss'
 import QuotesSvg from '@/shared/icons/quotes'
 import { useQuotesStore } from '@/store/quotes-store'
-import { useEffect } from 'react'
-
+import React, { useEffect } from 'react'
 
 const Quotes = () => {
   
