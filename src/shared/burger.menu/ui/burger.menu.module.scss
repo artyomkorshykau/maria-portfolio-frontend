@@ -1,9 +1,18 @@
+@import "@/styles/_apx-variables.scss";
+
 .hamburger {
 
-  height: 50px;
-  width: 50px;
+  height: $apx-50;
+  width: $apx-50;
   transition: transform 0.2s;
   position: relative;
+
+  & svg {
+
+    width: $apx-50;
+    height: $apx-50;
+
+  }
 
 }
 

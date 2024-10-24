@@ -4,17 +4,17 @@
 
   cursor: pointer;
   position: relative;
-  padding: 15px 50px;
+  padding: $apx-15 $apx-50;
   text-decoration: none;
   border: none;
   color: #fff;
-  font-size: 1.2em;
   text-transform: uppercase;
   font-family: sans-serif;
-  letter-spacing: 4px;
+  font-size: $apx-16;
+  letter-spacing: $apx-4;
   overflow: hidden;
   background: rgba(255, 255, 255, 0.1);
-  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 $apx-5 $apx-5 rgba(0, 0, 0, 0.2);
   width: max-content;
   border-radius: $apx-4
 
@@ -69,7 +69,7 @@
   top: 0;
   left: 0;
   width: 0;
-  height: 1px;
+  height: $apx-1;
   background: #fff;
 
 }
@@ -85,7 +85,7 @@
 
   top: 0;
   left: 0;
-  width: 1px;
+  width: $apx-1;
   height: 0;
   background: #fff;
 
@@ -103,7 +103,7 @@
   bottom: 0;
   right: 0;
   width: 0;
-  height: 1px;
+  height: $apx-1;
   background: #fff;
 
 }
@@ -119,7 +119,7 @@
 
   bottom: 0;
   right: 0;
-  width: 1px;
+  width: $apx-1;
   height: 0;
   background: #fff;
 

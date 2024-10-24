@@ -3,8 +3,10 @@
 .header {
 
   background-image: url('../../../public/img/header-photo.png');
-  width: $apx-1920;
-  height: $apx-993;
+  background-size: cover;
+  background-position: center;
+  width: 100vw;
+  height: max-content;
 
   display: flex;
   flex-direction: column;
