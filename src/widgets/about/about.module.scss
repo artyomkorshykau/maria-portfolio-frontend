@@ -4,9 +4,9 @@
 
   display: flex;
   justify-content: center;
-  align-items: start;
+  align-items: flex-start;
   gap: $apx-35;
-  margin-top: $apx-100;
+  margin: $apx-100 0 $apx-50 0;
 
   width: 100vw;
   height: max-content;

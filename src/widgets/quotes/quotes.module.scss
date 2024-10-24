@@ -1,0 +1,75 @@
+@import "@/styles/_apx-variables.scss";
+
+.quotesSection {
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  width: 100vw;
+  height: $apx-691;
+  background-color: #0D0D0D;
+  position: relative;
+
+  &__title {
+
+    font-size: $apx-120;
+    line-height: $apx-180;
+    text-transform: uppercase;
+    font-weight: 200;
+    color: #EAEAEA;
+    margin: 0;
+
+  }
+
+  &__separator {
+
+    width: $apx-222;
+    height: $apx-4;
+    background-color: #EAEAEA;
+
+  }
+
+  &__quote {
+
+    color: #FFFFFF;
+    font-size: $apx-34;
+    font-weight: 400;
+    line-height: $apx-60;
+    margin-top: $apx-85;
+    width: $apx-830;
+    text-align: center;
+
+  }
+
+  &__author {
+
+    color: #999999;
+    font-size: $apx-18;
+    line-height: $apx-32;
+    font-weight: 700;
+    margin-top: $apx-50;
+
+  }
+
+  &__up {
+
+    position: absolute;
+    top: 0;
+    left: $apx-50;
+    fill: rgba(207, 207, 207, 0.2)
+
+
+  }
+
+  &__down {
+
+    position: absolute;
+    right: $apx-50;
+    bottom: 0;
+    fill: rgba(207, 207, 207, 0.2)
+
+  }
+
+}
