@@ -1,6 +1,6 @@
 @import "@/styles/_apx-variables.scss";
 
-.button {
+.primary {
 
   cursor: pointer;
   position: relative;
@@ -20,7 +20,7 @@
 
 }
 
-.button:before {
+.primary:before {
 
   content: "";
   position: absolute;
@@ -31,7 +31,7 @@
 
 }
 
-.button::after {
+.primary::after {
 
   content: "";
   position: absolute;
@@ -50,13 +50,13 @@
 
 }
 
-.button:hover::after {
+.primary:hover::after {
 
   left: 100%;
 
 }
 
-.button span {
+.primary span {
 
   position: absolute;
   display: block;
@@ -64,7 +64,7 @@
 
 }
 
-.button span:nth-child(1) {
+.primary span:nth-child(1) {
 
   top: 0;
   left: 0;
@@ -74,14 +74,14 @@
 
 }
 
-.button:hover span:nth-child(1) {
+.primary:hover span:nth-child(1) {
 
   width: 100%;
   transform: translateX(100%);
 
 }
 
-.button span:nth-child(2) {
+.primary span:nth-child(2) {
 
   top: 0;
   left: 0;
@@ -91,14 +91,14 @@
 
 }
 
-.button:hover span:nth-child(2) {
+.primary:hover span:nth-child(2) {
 
   height: 100%;
   transform: translateY(100%);
 
 }
 
-.button span:nth-child(3) {
+.primary span:nth-child(3) {
 
   bottom: 0;
   right: 0;
@@ -108,14 +108,14 @@
 
 }
 
-.button:hover span:nth-child(3) {
+.primary:hover span:nth-child(3) {
 
   width: 100%;
   transform: translateX(-100%);
 
 }
 
-.button span:nth-child(4) {
+.primary span:nth-child(4) {
 
   bottom: 0;
   right: 0;
@@ -125,9 +125,47 @@
 
 }
 
-.button:hover span:nth-child(4) {
+.primary:hover span:nth-child(4) {
 
   height: 100%;
   transform: translateY(-100%);
+
+}
+
+.secondary {
+
+  width: $apx-190;
+  height: $apx-50;
+  font-size: $apx-16;
+  border: none;
+  position: relative;
+  overflow: hidden;
+  text-transform: uppercase;
+  z-index: 1;
+  box-shadow: $apx-6 $apx-6 $apx-12 #c5c5c5,
+  -$apx-6 -$apx-6 $apx-12 #ffffff;
+  cursor: pointer;
+  border-radius: $apx-5;
+
+}
+
+.secondary::before {
+
+  content: '';
+  width: 0;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: linear-gradient(to right, #d9d9d9 0%, #bebebe 100%);
+  transition: .5s ease;
+  display: block;
+  z-index: -1;
+
+}
+
+.secondary:hover::before {
+
+  width: 100%;
 
 }

@@ -1,0 +1,34 @@
+@import "@/styles/_apx-variables.scss";
+
+.aboutMe {
+
+  display: flex;
+  flex-direction: column;
+
+  &__title {
+
+    font-size: $apx-120;
+    color: #F8F8F8;
+    line-height: $apx-180;
+
+  }
+
+  &__description {
+
+    max-width: $apx-600;
+
+    font-size: $apx-17;
+    color: #555555;
+    line-height: $apx-40;
+    font-weight: 400;
+    letter-spacing: $apx-1;
+    margin-bottom: $apx-60;
+
+  }
+
+  &__button {
+
+
+  }
+
+}

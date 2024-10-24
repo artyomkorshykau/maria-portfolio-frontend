@@ -1,0 +1,14 @@
+@import "@/styles/_apx-variables.scss";
+
+.aboutSection {
+
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  gap: $apx-35;
+  margin-top: $apx-100;
+
+  width: 100vw;
+  height: max-content;
+
+}

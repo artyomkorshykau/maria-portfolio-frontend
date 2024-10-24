@@ -1,6 +1,7 @@
 import style from './billboard.module.scss'
 import Button from '@/shared/button/button'
 
+
 const Billboard = () => {
   
   return (
@@ -33,7 +34,7 @@ const Billboard = () => {
       
       </div>
       
-      <Button/>
+      <Button variant={ 'primary' }/>
     
     </div>
   

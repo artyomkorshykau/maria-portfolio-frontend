@@ -1,0 +1,45 @@
+@import "@/styles/_apx-variables.scss";
+
+.skills {
+
+  display: flex;
+  gap: $apx-40;
+  flex-direction: column;
+  margin-top: $apx-190;
+
+  &__skill {
+
+    &__title {
+
+      text-transform: uppercase;
+      color: #2F2F2F;
+      font-size: $apx-21;
+      font-weight: 400;
+      line-height: $apx-21;
+      letter-spacing: $apx-1;
+
+    }
+
+    &__progress {
+
+      display: block;
+      width: $apx-500;
+      margin-top: $apx-8;
+      box-sizing: border-box;
+      position: relative;
+      height: $apx-1;
+      background-color: #DBDBDB;
+      border: $apx-1 solid #DBDBDB;
+
+    }
+
+    &__progressLoader {
+
+      border: $apx-1 solid #3A3422;
+      transition: width 0.3s ease;
+
+    }
+
+  }
+
+}

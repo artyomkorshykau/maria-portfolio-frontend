@@ -2,22 +2,44 @@ import React from 'react'
 import styles from './button.module.scss'
 
 
-const Button = () => {
+type Props = {
   
-  return (
+  variant: 'primary' | 'secondary'
+  
+}
+
+const Button = ( { variant }: Props ) => {
+  
+  if( variant === 'primary' ) {
     
-    <button className = { styles.button }>
+    return (
       
-      <span></span>
-      <span></span>
-      <span></span>
-      <span></span>
+      <button className={ `${ styles.primary }` }>
+        
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        
+        About me
       
-      About me
-      
-    </button>
+      </button>
     
-  )
+    )
+    
+  } else if( variant === 'secondary' ) {
+    
+    return (
+      
+      <button className={ `${ styles.secondary }` }>
+        
+        About me
+      
+      </button>
+    
+    )
+    
+  }
   
 }
 

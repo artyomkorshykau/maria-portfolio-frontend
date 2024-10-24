@@ -7,7 +7,7 @@ const Header = () => {
   
   return (
     
-    <section className = { `${ style.header }` }>
+    <section className = { `${ style.headerSection }` }>
     
       <Navigation/>
       <Billboard/>
