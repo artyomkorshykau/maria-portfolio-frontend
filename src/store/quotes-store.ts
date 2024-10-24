@@ -10,9 +10,22 @@ export const useQuotesStore = create<QuotesStore>( ( set ) => ( {
   
   setDailyQuote: async() => {
     
-    const { author, quote } = await getDailyQuote()
-    
-    set( { quote, author } )
+    try {
+      
+      const { author, quote } = await getDailyQuote()
+      
+      set( { quote, author } )
+      
+    } catch( err ) {
+      
+      set( {
+        
+        quote: 'Имейте храбрость следовать своему сердцу и интуиции. Они каким-то образом уже знают то, кем вы хотите стать на самом деле',
+        author: 'Стив Джобс'
+        
+      } )
+      
+    }
     
   }
   

@@ -6,7 +6,7 @@ type Props = {
   
   variant: 'primary' | 'secondary'
   title: string
-  className: string
+  className?: string
   
 } & ButtonHTMLAttributes<HTMLButtonElement>
 

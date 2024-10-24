@@ -1,6 +1,3 @@
-import { QuotesResponse } from '@/service/types/quotes.types'
-
-
 export type QuotesActions = {
   
   setDailyQuote: () => Promise<void>
@@ -9,8 +6,8 @@ export type QuotesActions = {
 
 export type QuotesState = {
   
-  quote: string
-  author: string
+  quote: string | null
+  author: string | null
   
 }
 
