@@ -1,0 +1,73 @@
+@import "@/styles/_apx-variables.scss";
+
+
+.contactForm {
+
+  background-color: #f2f2f2;
+  padding: $apx-80 $apx-40;
+  border-radius: $apx-10;
+  width: $apx-600;
+
+  &__form {
+
+    display: flex;
+    flex-direction: column;
+
+    input,
+    textarea {
+
+      padding: $apx-10;
+      border: none;
+      border-radius: $apx-5;
+      margin-bottom: $apx-20;
+      box-shadow: $apx-3 $apx-3 $apx-6 #c5c5c5,
+      -$apx-3 -$apx-3 $apx-6 #f2f2f2;
+      font-size: $apx-21;
+      color: #5e5e5e;
+
+      &:focus {
+
+        outline: none;
+        box-shadow: 0 0 $apx-5 #ff6384;
+        transform: scale(1.01);
+        transition: transform 0.3s ease-in-out;
+      }
+
+      &::placeholder {
+
+        opacity: 0.5;
+        text-transform: uppercase;
+        letter-spacing: $apx-2;
+        font-size: $apx-17;
+
+      }
+
+    }
+
+    input {
+
+      height: $apx-64;
+
+    }
+
+    textarea {
+
+      resize: vertical;
+      height: max-content;
+      min-height: $apx-200;
+
+    }
+
+    &__button {
+
+      width: 100%;
+      box-shadow: $apx-6 $apx-6 $apx-12 #c5c5c5,
+      -$apx-6 -$apx-6 $apx-12 #f2f2f2;
+      letter-spacing: $apx-7;
+      color: #777777;
+
+    }
+
+  }
+
+}

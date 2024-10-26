@@ -1,6 +1,6 @@
 import { create } from 'zustand'
 import { QuotesStore } from '@/store/types/quotes-store'
-import { getDailyQuote } from '@/service/quotes.service'
+import { getDailyQuote } from '@/service/quotes.server'
 
 
 export const useQuotesStore = create<QuotesStore>( ( set ) => ( {

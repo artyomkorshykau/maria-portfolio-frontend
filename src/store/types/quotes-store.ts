@@ -1,10 +1,10 @@
-export type QuotesActions = {
+type QuotesActions = {
   
   setDailyQuote: () => Promise<void>
   
 }
 
-export type QuotesState = {
+type QuotesState = {
   
   quote: string | null
   author: string | null

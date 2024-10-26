@@ -1,4 +1,4 @@
-export type AppActions = {
+type AppActions = {
   
   setToggleMenu: () => void
   setOpenContactModal: () => void
@@ -6,7 +6,7 @@ export type AppActions = {
   
 }
 
-export type AppState = {
+type AppState = {
   
   toggleMenu: boolean
   isShowContactModal: boolean

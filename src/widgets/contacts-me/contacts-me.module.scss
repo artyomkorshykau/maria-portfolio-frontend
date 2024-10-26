@@ -38,4 +38,20 @@
 
   }
 
+  &__modal {
+
+    width: max-content !important;
+
+    & > div {
+
+      & > div {
+
+        padding: 0 !important;
+
+      }
+
+    }
+
+  }
+
 }

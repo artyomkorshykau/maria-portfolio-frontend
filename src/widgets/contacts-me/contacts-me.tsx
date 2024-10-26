@@ -4,6 +4,7 @@ import Button from '@/shared/button/button'
 import style from './contacts-me.module.scss'
 import { Modal, Skeleton } from 'antd'
 import { useAppStore } from '@/store/app-store'
+import Form from '@/components/form/form'
 
 
 const ContactsMe = () => {
@@ -17,7 +18,9 @@ const ContactsMe = () => {
       <div className={ `${ style.contactsSection__title }` }>Get in touch</div>
       
       <div className={ `${ style.contactsSection__description }` }>
+        
         - For any questions please mail me -
+        
       </div>
       
       <Button
@@ -33,11 +36,17 @@ const ContactsMe = () => {
         
         open={ isShowContactModal }
         onCancel={ () => setCloseContactModal() }
+        centered
+        closable={ false }
+        footer={ null }
+        className={ `${ style.contactsSection__modal }` }
       
       >
+        
+        <Form/>
       
       </Modal>
-      
+    
     </section>
   
   )
