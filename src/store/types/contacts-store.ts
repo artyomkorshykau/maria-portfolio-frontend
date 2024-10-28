@@ -1,6 +1,3 @@
-import { ContactsResponse } from '@/service/types/contacts.types'
-
-
 type ContactsActions = {
   
   setName: ( name: string ) => void

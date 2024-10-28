@@ -3,7 +3,6 @@
 import style from './form.module.scss'
 import Button from '@/shared/button/button'
 import { useContactsStore } from '@/store/contacts-store'
-import { notification } from 'antd'
 
 
 const Form = () => {
