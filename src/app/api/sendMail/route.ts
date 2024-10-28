@@ -6,6 +6,15 @@ export async function POST( req: NextRequest ) {
   
   const { name, message } = await req.json()
   
+  if( !name || !message ) {
+    
+    return NextResponse.json(
+      { message: 'Email и сообщение обязательны' },
+      { status: 400 }
+    )
+    
+  }
+  
   // Настройка транспортера для отправки почты
   const transporter = nodemailer.createTransport( {
     
