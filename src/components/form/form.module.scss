@@ -4,7 +4,7 @@
 .contactForm {
 
   background-color: #f2f2f2;
-  padding: $apx-80 $apx-40;
+  padding: $apx-80 $apx-40 $apx-20 $apx-40;
   border-radius: $apx-10;
   width: $apx-600;
 
@@ -65,6 +65,7 @@
       -$apx-6 -$apx-6 $apx-12 #f2f2f2;
       letter-spacing: $apx-7;
       color: #777777;
+      margin-top: $apx-40;
 
     }
 

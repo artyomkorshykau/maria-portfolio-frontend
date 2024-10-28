@@ -1,4 +1,7 @@
-export const sendEmailApi = async( email: string, message: string ) => {
+import { ContactsResponse } from '@/service/types/contacts.types'
+
+
+export const sendEmailApi = async( name: string, message: string ): Promise<ContactsResponse> => {
   
   const response = await fetch( '/api/sendMail', {
     
@@ -9,7 +12,7 @@ export const sendEmailApi = async( email: string, message: string ) => {
       
     },
     
-    body: JSON.stringify( { email, message } )
+    body: JSON.stringify( { name, message } )
     
   } )
   
@@ -18,5 +21,7 @@ export const sendEmailApi = async( email: string, message: string ) => {
     throw new Error( 'Ошибка при отправке сообщения.' )
     
   }
+  
+  return await response.json()
   
 }

@@ -56,3 +56,23 @@ body::-webkit-scrollbar {
 p {
   margin: 0;
 }
+
+.ant-notification-notice-wrapper {
+
+  border-radius: $apx-10 !important;
+
+
+  .ant-notification-notice {
+
+    background-image: linear-gradient(to right, #d9d9d9 0%, #bebebe 100%);
+    border-radius: $apx-10 !important;
+
+    .ant-notification-notice-message {
+
+      font-size: $apx-17 !important
+
+    }
+
+  }
+
+}

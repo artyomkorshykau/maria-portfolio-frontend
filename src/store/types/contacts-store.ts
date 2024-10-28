@@ -1,7 +1,9 @@
+import { ContactsResponse } from '@/service/types/contacts.types'
+
+
 type ContactsActions = {
   
   setName: ( name: string ) => void
-  setEmail: ( email: string ) => void
   setMessage: ( message: string ) => void
   sendEmail: () => void
   
@@ -10,8 +12,8 @@ type ContactsActions = {
 type ContactsState = {
   
   name: string
-  email: string
   message: string
+  disabled: boolean
   
 }
 

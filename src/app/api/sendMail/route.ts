@@ -4,13 +4,13 @@ import nodemailer from 'nodemailer'
 
 export async function POST( req: NextRequest ) {
   
-  const { email, message } = await req.json()
+  const { name, message } = await req.json()
   
-  if( !email || !message ) {
+  if( !name || !message ) {
     
     return NextResponse.json(
       { message: 'Email и сообщение обязательны' },
-      { status: 400 },
+      { status: 400 }
     )
     
   }
@@ -35,10 +35,13 @@ export async function POST( req: NextRequest ) {
     // Настройка отправляемого письма
     await transporter.sendMail( {
       
-      from: email,
       to: process.env.EMAIL_TO,
       subject: 'Новое сообщение с портфолио',
-      text: message
+      text: `${ message }
+      
+      
+Отправил: ${ name }
+      `
       
     } )
     

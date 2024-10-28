@@ -55,6 +55,8 @@
 
   &__up {
 
+    width: $apx-385;
+    height: $apx-321;
     position: absolute;
     top: 0;
     left: $apx-50;
@@ -65,6 +67,8 @@
 
   &__down {
 
+    width: $apx-385;
+    height: $apx-321;
     position: absolute;
     right: $apx-50;
     bottom: 0;

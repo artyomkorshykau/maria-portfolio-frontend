@@ -3,6 +3,7 @@
 import style from './form.module.scss'
 import Button from '@/shared/button/button'
 import { useContactsStore } from '@/store/contacts-store'
+import { notification } from 'antd'
 
 
 const Form = () => {
@@ -11,11 +12,10 @@ const Form = () => {
     
     setName,
     setMessage,
-    setEmail,
     message,
     name,
-    email,
-    sendEmail
+    sendEmail,
+    disabled
     
   } = useContactsStore()
   
@@ -29,19 +29,9 @@ const Form = () => {
           
           id="name"
           name="name"
-          placeholder={ 'Имя' }
+          placeholder={ 'Ваше имя' }
           value={ name }
           onChange={ ( e ) => setName( e.currentTarget.value ) }
-        
-        />
-        
-        <input
-          
-          id="email"
-          name="email"
-          placeholder={ 'Почта' }
-          value={ email }
-          onChange={ ( e ) => setEmail( e.currentTarget.value ) }
         
         />
         
@@ -62,6 +52,7 @@ const Form = () => {
           className={ `${ style.contactForm__form__button }` }
           type={ 'button' }
           onClick={ () => sendEmail() }
+          disabled={ disabled }
         
         />
       

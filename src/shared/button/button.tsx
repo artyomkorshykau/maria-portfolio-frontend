@@ -7,10 +7,11 @@ type Props = {
   variant: 'primary' | 'secondary'
   title: string
   className?: string
+  disabled?: boolean
   
 } & ButtonHTMLAttributes<HTMLButtonElement>
 
-const Button = ( { variant, title, className, ...props }: Props ) => {
+const Button = ( { variant, title, className, disabled, ...props }: Props ) => {
   
   if( variant === 'primary' ) {
     
@@ -19,6 +20,7 @@ const Button = ( { variant, title, className, ...props }: Props ) => {
       <button
         
         className={ `${ styles.primary } ${ className }` }
+        disabled={ disabled }
         { ...props }
       
       >
@@ -40,7 +42,8 @@ const Button = ( { variant, title, className, ...props }: Props ) => {
       
       <button
         
-        className={ `${ styles.secondary } ${ className }` }
+        className={ `${ styles.secondary } ${ className } ${ disabled && styles.secondaryDisabled }` }
+        disabled={ disabled }
         { ...props }
       
       >

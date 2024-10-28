@@ -147,25 +147,38 @@
   cursor: pointer;
   border-radius: $apx-5;
 
+  &::before {
+
+    content: '';
+    width: 0;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: linear-gradient(to right, #d9d9d9 0%, #bebebe 100%);
+    transition: .5s ease;
+    display: block;
+    z-index: -1;
+
+  }
+
+  &:hover::before {
+
+    width: 100%;
+
+  }
+
 }
 
-.secondary::before {
+.secondaryDisabled {
 
-  content: '';
-  width: 0;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  background-image: linear-gradient(to right, #d9d9d9 0%, #bebebe 100%);
-  transition: .5s ease;
-  display: block;
-  z-index: -1;
+  background-color: #bebebe;
+  cursor: not-allowed;
 
-}
+  &::before {
 
-.secondary:hover::before {
+    background-image: none;
 
-  width: 100%;
+  }
 
 }
