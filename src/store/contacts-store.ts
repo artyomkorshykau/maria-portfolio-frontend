@@ -46,6 +46,7 @@ export const useContactsStore = create<ContactsStore>( ( set, getState ) => ( {
         pauseOnHover: true
         
       } )
+      
       setTimeout( () => {
         
         set( { disabled: false } )
