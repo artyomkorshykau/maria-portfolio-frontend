@@ -1,141 +1,74 @@
+'use client'
+
 import React from 'react'
+import 'swiper/css'
+import 'swiper/css/pagination'
 import style from './portfolio.module.scss'
-import Image from 'next/image'
+import { works } from '@/constants/works'
+import WorkSlider from '@/components/works-slider/works-slider'
 
 
 const Portfolio = () => {
   
+  const worksData = [
+    {
+      title: 'magazine front design',
+      images: works.first,
+      wrapperStyle: style.portfolioSection__works__block__work__img_wrapper_one
+    },
+    {
+      title: 'product bottle design',
+      images: works.second,
+      wrapperStyle: style.portfolioSection__works__block__work__img_wrapper_two
+    },
+    {
+      title: 'coffee bottle mockup',
+      images: works.third,
+      wrapperStyle: style.portfolioSection__works__block__work__img_wrapper_three
+    },
+    {
+      title: 'perfume brand identity',
+      images: works.fourth,
+      wrapperStyle: style.portfolioSection__works__block__work__img_wrapper_four
+    },
+    {
+      title: 'product tag mockup',
+      images: works.fifth,
+      wrapperStyle: style.portfolioSection__works__block__work__img_wrapper_five
+    },
+    {
+      title: 'magazine & brochure mockup',
+      images: works.fifth,
+      wrapperStyle: style.portfolioSection__works__block__work__img_wrapper_six
+    }
+  ]
+  
   return (
     
-    <section className={ `${ style.portfolioSection }` }>
+    <section className={ style.portfolioSection }>
       
-      <div className={ `${ style.portfolioSection__title }` }>Portfolio</div>
-      
-      <div className={ `${ style.portfolioSection__works }` }>
+      <div className={ style.portfolioSection__title }>Portfolio</div>
+      <div className={ style.portfolioSection__works }>
         
-        <div className={ `${ style.portfolioSection__works__block }` }>
+        { worksData.map( ( work, index ) => (
           
-          <div className={ `${ style.portfolioSection__works__block__work }` }>
+          <div key={ index } className={ style.portfolioSection__works__block }>
             
-            <div className={ `${ style.portfolioSection__works__block__work__img_wrapper_one }` }>
+            <div className={ style.portfolioSection__works__block__work }>
               
-              <Image
+              <div className={ work.wrapperStyle }>
                 
-                src={ 'https://drive.google.com/uc?export=view&id=1WqLgiR1O96-NAPmmyjd1zB613vf6u07Y' }
-                alt=""
-                layout={ 'fill' }
-                objectFit={ 'cover' }
+                <WorkSlider images={ work.images } wrapperStyle={ work.wrapperStyle }/>
               
-              />
+              </div>
+              
+              <span className={ style.portfolioSection__works__block__work__title }>{ work.title }</span>
             
             </div>
-            
-            <div className={ `${ style.portfolioSection__works__block__work__title }` }>magazine front design</div>
-          
-          
-          </div>
-          
-          <div className={ `${ style.portfolioSection__works__block__work }` }>
-            
-            <div className={ `${ style.portfolioSection__works__block__work__img_wrapper_two }` }>
-              
-              <Image
-                
-                src={ 'https://drive.google.com/uc?export=view&id=1rCFfc058zIvsrAW96uoFwc4Qw2291GSA' }
-                alt=""
-                layout={ 'fill' }
-                objectFit={ 'cover' }
-              
-              />
-            
-            </div>
-            
-            <span className={ `${ style.portfolioSection__works__block__work__title }` }>product bottle design</span>
-          
-          </div>
-          
-          <div className={ `${ style.portfolioSection__works__block__work }` }>
-            
-            <div className={ `${ style.portfolioSection__works__block__work__img_wrapper_three }` }>
-              
-              <Image
-                
-                src={ 'https://drive.google.com/uc?export=view&id=1hUgq1YIVZFG2QzT4FFDihvtEBIB-Wrvt' }
-                alt=""
-                layout={ 'fill' }
-                objectFit={ 'cover' }
-              
-              />
-            
-            </div>
-            
-            <span className={ `${ style.portfolioSection__works__block__work__title }` }>coffee bottle mockup</span>
           
           </div>
         
-        
-        </div>
-        
-        <div className={ `${ style.portfolioSection__works__block }` }>
-          
-          <div className={ `${ style.portfolioSection__works__block__work }` }>
-            
-            <div className={ `${ style.portfolioSection__works__block__work__img_wrapper_four }` }>
-              
-              <Image
-                
-                src={ 'https://drive.google.com/uc?export=view&id=1eYX5QdrouR3GTT0FF4KEcPGK_GJ2nukN' }
-                alt=""
-                layout={ 'fill' }
-                objectFit={ 'cover' }
-              
-              />
-            
-            </div>
-            
-            <span className={ `${ style.portfolioSection__works__block__work__title }` }>perfume brand identity</span>
-          
-          </div>
-          
-          <div className={ `${ style.portfolioSection__works__block__work }` }>
-            
-            <div className={ `${ style.portfolioSection__works__block__work__img_wrapper_five }` }>
-              
-              <Image
-                
-                src={ 'https://drive.google.com/uc?export=view&id=1D88NY5OlbUhGRUHj4gIvURil4HtzRe2j' }
-                alt=""
-                layout={ 'fill' }
-                objectFit={ 'cover' }
-              
-              />
-            
-            </div>
-            
-            <span className={ `${ style.portfolioSection__works__block__work__title }` }>product tag mockup</span>
-          
-          </div>
-          
-          <div className={ `${ style.portfolioSection__works__block__work }` }>
-            
-            <div className={ `${ style.portfolioSection__works__block__work__img_wrapper_six }` }>
-              
-              <Image
-                
-                src={ 'https://drive.google.com/uc?export=view&id=1cx-5Jwg-VHM_DuxFqyHVwmZnzte7300j' }
-                alt=""
-                layout={ 'fill' }
-                objectFit={ 'cover' }
-              
-              />
-            
-            </div>
-            
-            <span className={ `${ style.portfolioSection__works__block__work__title }` }>magazine & brochure mockup</span>
-          
-          </div>
-        
-        </div>
+        ) ) }
       
       </div>
     
@@ -146,3 +79,4 @@ const Portfolio = () => {
 }
 
 export default Portfolio
+

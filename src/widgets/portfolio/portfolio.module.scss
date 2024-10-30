@@ -21,8 +21,9 @@
   &__works {
 
     display: flex;
-    justify-content: center;
-    align-items: flex-start;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 236vh;
     gap: $apx-62;
 
     &__block {
@@ -49,141 +50,51 @@
 
         }
 
-        &__img_wrapper_one {
+        &__img_wrapper_one,
+        &__img_wrapper_two,
+        &__img_wrapper_three,
+        &__img_wrapper_four,
+        &__img_wrapper_five,
+        &__img_wrapper_six {
 
           position: relative;
           width: $apx-600;
+
+        }
+
+        &__img_wrapper_one {
+
           height: $apx-733;
-
-          & > img {
-
-            border-radius: $apx-7;
-            box-shadow: $apx-6 $apx-6 $apx-12 #3b3b3b;
-            transition: transform 0.5s ease;
-
-            &:hover {
-
-              box-shadow: $apx-6 $apx-6 $apx-12 #3b3b3b;
-              transform: scale(1.01);
-
-            }
-
-          }
 
         }
 
         &__img_wrapper_two {
 
-          position: relative;
-          width: $apx-600;
           height: $apx-733;
-
-          & > img {
-
-            border-radius: $apx-7;
-            box-shadow: $apx-6 $apx-6 $apx-12 #3b3b3b;
-            transition: transform 0.5s ease;
-
-            &:hover {
-
-              box-shadow: $apx-6 $apx-6 $apx-12 #3b3b3b;
-              transform: scale(1.01);
-
-            }
-
-          }
 
         }
 
         &__img_wrapper_three {
 
-          position: relative;
-          width: $apx-600;
           height: $apx-506;
-
-          & > img {
-
-            border-radius: $apx-7;
-            box-shadow: $apx-6 $apx-6 $apx-12 #3b3b3b;
-            transition: transform 0.5s ease;
-
-            &:hover {
-
-              box-shadow: $apx-6 $apx-6 $apx-12 #3b3b3b;
-              transform: scale(1.01);
-
-            }
-
-          }
 
         }
 
         &__img_wrapper_four {
 
-          position: relative;
-          width: $apx-600;
           height: $apx-400;
-
-          & > img {
-
-            border-radius: $apx-7;
-            box-shadow: $apx-6 $apx-6 $apx-12 #3b3b3b;
-            transition: transform 0.5s ease;
-
-            &:hover {
-
-              box-shadow: $apx-6 $apx-6 $apx-12 #3b3b3b;
-              transform: scale(1.01);
-
-            }
-
-          }
 
         }
 
         &__img_wrapper_five {
 
-          position: relative;
-          width: $apx-600;
           height: $apx-619;
-
-          & > img {
-
-            border-radius: $apx-7;
-            box-shadow: $apx-6 $apx-6 $apx-12 #3b3b3b;
-            transition: transform 0.5s ease;
-
-            &:hover {
-
-              box-shadow: $apx-6 $apx-6 $apx-12 #3b3b3b;
-              transform: scale(1.01);
-
-            }
-
-          }
 
         }
 
         &__img_wrapper_six {
 
-          position: relative;
-          width: $apx-600;
           height: $apx-619;
-
-          & > img {
-
-            border-radius: $apx-7;
-            box-shadow: $apx-6 $apx-6 $apx-12 #3b3b3b;
-            transition: transform 0.5s ease;
-
-            &:hover {
-
-              box-shadow: $apx-6 $apx-6 $apx-12 #3b3b3b;
-              transform: scale(1.01);
-
-            }
-
-          }
 
         }
 
@@ -201,8 +112,8 @@
           &:hover {
 
 
-              cursor: pointer;
-              transform: scale(1.03);
+            cursor: pointer;
+            transform: scale(1.03);
 
 
           }

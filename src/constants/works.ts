@@ -1,24 +1,83 @@
-import cover from '@/assets/works/1.jpg'
-
-
 type WorksType = {
   
-  id: number
-  title: string
-  width: number
-  height: number
-  cover: string;
-  images: string[]
+  first: string[],
+  second: string[],
+  third: string[],
+  fourth: string[],
+  fifth: string[],
+  sixth: string[]
   
 }
 
-export const works: WorksType[] = [
-  
-  { id: 0, title: 'magazine front design', width: 600, height: 733, cover: cover.src, images: [] },
-  { id: 3, title: 'product bottle design', width: 600, height: 404, cover: cover.src, images: [] },
-  { id: 1, title: 'coffee bottle mockup', width: 600, height: 733, cover: cover.src, images: [] },
-  { id: 4, title: 'perfume brand identity', width: 600, height: 619, cover: cover.src, images: [] },
-  { id: 2, title: 'product tag mockup', width: 600, height: 506, cover: cover.src, images: [] },
-  { id: 5, title: 'magazine & brochure mockup', width: 600, height: 619, cover: cover.src, images: [] }
+export const googleDriveUrl: string = 'https://drive.google.com/uc?export=view&id='
 
-]
+// ID изображений из облака для слайдера, один массив - один слайдер
+export const works: WorksType = {
+  
+  first: [
+    
+    '1WqLgiR1O96-NAPmmyjd1zB613vf6u07Y',
+    '1rCFfc058zIvsrAW96uoFwc4Qw2291GSA',
+    '1hUgq1YIVZFG2QzT4FFDihvtEBIB-Wrvt',
+    '1eYX5QdrouR3GTT0FF4KEcPGK_GJ2nukN',
+    '1D88NY5OlbUhGRUHj4gIvURil4HtzRe2j',
+    '1cx-5Jwg-VHM_DuxFqyHVwmZnzte7300j'
+  
+  ],
+  
+  second: [
+    
+    '1rCFfc058zIvsrAW96uoFwc4Qw2291GSA',
+    '1WqLgiR1O96-NAPmmyjd1zB613vf6u07Y',
+    '1hUgq1YIVZFG2QzT4FFDihvtEBIB-Wrvt',
+    '1eYX5QdrouR3GTT0FF4KEcPGK_GJ2nukN',
+    '1D88NY5OlbUhGRUHj4gIvURil4HtzRe2j',
+    '1cx-5Jwg-VHM_DuxFqyHVwmZnzte7300j'
+  
+  ],
+  
+  third: [
+    
+    '1hUgq1YIVZFG2QzT4FFDihvtEBIB-Wrvt',
+    '1rCFfc058zIvsrAW96uoFwc4Qw2291GSA',
+    '1WqLgiR1O96-NAPmmyjd1zB613vf6u07Y',
+    '1eYX5QdrouR3GTT0FF4KEcPGK_GJ2nukN',
+    '1D88NY5OlbUhGRUHj4gIvURil4HtzRe2j',
+    '1cx-5Jwg-VHM_DuxFqyHVwmZnzte7300j'
+  
+  ],
+  
+  fourth: [
+    
+    '1eYX5QdrouR3GTT0FF4KEcPGK_GJ2nukN',
+    '1rCFfc058zIvsrAW96uoFwc4Qw2291GSA',
+    '1hUgq1YIVZFG2QzT4FFDihvtEBIB-Wrvt',
+    '1WqLgiR1O96-NAPmmyjd1zB613vf6u07Y',
+    '1D88NY5OlbUhGRUHj4gIvURil4HtzRe2j',
+    '1cx-5Jwg-VHM_DuxFqyHVwmZnzte7300j'
+  
+  ],
+  
+  fifth: [
+    
+    '1D88NY5OlbUhGRUHj4gIvURil4HtzRe2j',
+    '1rCFfc058zIvsrAW96uoFwc4Qw2291GSA',
+    '1hUgq1YIVZFG2QzT4FFDihvtEBIB-Wrvt',
+    '1eYX5QdrouR3GTT0FF4KEcPGK_GJ2nukN',
+    '1WqLgiR1O96-NAPmmyjd1zB613vf6u07Y',
+    '1cx-5Jwg-VHM_DuxFqyHVwmZnzte7300j'
+  
+  ],
+  
+  sixth: [
+    
+    '1cx-5Jwg-VHM_DuxFqyHVwmZnzte7300j',
+    '1rCFfc058zIvsrAW96uoFwc4Qw2291GSA',
+    '1hUgq1YIVZFG2QzT4FFDihvtEBIB-Wrvt',
+    '1eYX5QdrouR3GTT0FF4KEcPGK_GJ2nukN',
+    '1D88NY5OlbUhGRUHj4gIvURil4HtzRe2j',
+    '1WqLgiR1O96-NAPmmyjd1zB613vf6u07Y'
+  
+  ]
+  
+}
